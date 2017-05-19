@@ -29,6 +29,8 @@ import javax.swing.JTextField;
  * @author Sean Pineda
  *
  */
+
+//TODO Accept all user equations
 public class Main_Window {
 	String inputEquation;
 	FlipFlopType type;
@@ -164,7 +166,7 @@ public class Main_Window {
 		lblNumberOfInput = new JLabel("Number of input variables");
 		lblNumberOfInput.setForeground(new Color(0, 0, 0));
 		lblNumberOfInput.setFont(new Font("Rockwell", Font.BOLD, 18));
-		lblNumberOfInput.setBounds(10, 102, 242, 38);
+		lblNumberOfInput.setBounds(10, 102, 244, 38);
 		TypeAndNumberPanel.add(lblNumberOfInput);
 		
 		lblNumberOfOutput = new JLabel("Number of output variables");
@@ -181,7 +183,7 @@ public class Main_Window {
 		
 		JButton btnBack = new JButton("Back");
 		btnBack.setEnabled(false);
-		btnBack.setBounds(94, 257, 89, 23);
+		btnBack.setBounds(99, 285, 89, 23);
 		TypeAndNumberPanel.add(btnBack);
 		
 		JButton backD = new JButton("Back");
@@ -506,7 +508,7 @@ public class Main_Window {
 				}
 			}
 		});
-		btnNext.setBounds(209, 257, 89, 23);
+		btnNext.setBounds(210, 285, 89, 23);
 		TypeAndNumberPanel.add(btnNext);
 		
 		cbNumberInput = new JComboBox();
@@ -524,6 +526,12 @@ public class Main_Window {
 		outputNumberListener onl = new outputNumberListener();
 		cbNumberOutput.addActionListener(onl);
 		TypeAndNumberPanel.add(cbNumberOutput);
+		
+		JLabel lblInputVariable = new JLabel("1 input variable: x; 2 input vars: x, y");
+		lblInputVariable.setForeground(Color.BLACK);
+		lblInputVariable.setFont(new Font("Rockwell", Font.BOLD, 18));
+		lblInputVariable.setBounds(26, 223, 338, 38);
+		TypeAndNumberPanel.add(lblInputVariable);
 		
 		OutputVarPanel = new JPanel();
 		OutputVarPanel.setLayout(null);

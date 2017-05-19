@@ -4,10 +4,12 @@ import java.util.Hashtable;
 
 public class FlipFlop {
 	public FlipFlopType type;
-	public Hashtable<String, String> inputEquations = new Hashtable<String, String>();
-	public FlipFlop(FlipFlopType type){
+	public Hashtable<String, String> flipflopEquations = new Hashtable<String, String>();
+	
+	public FlipFlop(FlipFlopType type, Hashtable<String, String> inputEquations){
 		this.type = type;
-	}
-	
-	
+		for(Object currKey : inputEquations.keySet().toArray()){
+			this.flipflopEquations.put(currKey.toString(), inputEquations.get(currKey));
+		}
+	}	
 }
