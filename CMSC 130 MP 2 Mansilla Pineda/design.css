@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Cabin|Arvo');
+
+body{
+	background-color: rgb(250,250,250);
+}
+
+h1{
+	font-family: 'Arvo', sans-serif;
+	font-size: 30px;
+	clear: both;
+}
+
+p{
+	font-family: 'Cabin', sans-serif;
+	font-size: 25px;
+	margin-top: 1px;
+}
+
+.StateTable table{
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: auto;
+	margin-left: auto;
+	border-collapse: collapse;
+}
+
+.StateTable td, th{
+	min-width: 100px;
+	border: 1px solid #FF4C47;
+	font-family: 'Cabin', Arial;
+}
+
+.StateTable th{
+	background-color: #FF4C47;
+	color: #ffffff;
+	font-weight: lighter;
+}
+
+.StateTable td{
+	text-align: center;
+}
