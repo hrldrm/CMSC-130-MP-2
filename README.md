@@ -1,4 +1,4 @@
-# CMSC-130-MP-2
+# cmsc-130-clocked-sequential-circuits
 Machine problem on Clocked Sequential Circuits
 
 _Made for:_ CMSC 130 (Logic Design and Digital Computer Circuits) <br/>
